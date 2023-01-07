@@ -1,18 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Report MustUnderstand="df" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:df="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition/defaultfontfamily" xmlns:am="http://schemas.microsoft.com/sqlserver/reporting/authoringmetadata">
+<Report MustUnderstand="df" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:df="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition/defaultfontfamily">
   <rd:ReportUnitType>Mm</rd:ReportUnitType>
   <rd:ReportID>4fffdfd6-b1b3-49f4-8477-325513acad6b</rd:ReportID>
-  <am:AuthoringMetadata>
-    <am:CreatedBy>
-      <am:Name>PBIRB</am:Name>
-      <am:Version>15.7.1801.18</am:Version>
-    </am:CreatedBy>
-    <am:UpdatedBy>
-      <am:Name>PBIRB</am:Name>
-      <am:Version>15.7.1801.18</am:Version>
-    </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2022-12-09T10:32:08.3380930Z</am:LastModifiedTimestamp>
-  </am:AuthoringMetadata>
   <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -628,7 +617,6 @@ OrElse (Fields!FLEET_CODE.Value="LIMEWOOD")OrElse (Fields!FLEET_CODE.Value="LIME
                                         <TablixCells>
                                           <TablixCell>
                                             <CellContents>
-                                              <rd:Selected>true</rd:Selected>
                                               <Image Name="Image3">
                                                 <Source>Embedded</Source>
                                                 <Value>PLSPICTURE1</Value>
@@ -1883,6 +1871,7 @@ OrElse (Fields!FLEET_CODE.Value="LIMEWOOD")OrElse (Fields!FLEET_CODE.Value="LIME
                                         <TablixCells>
                                           <TablixCell>
                                             <CellContents>
+                                              <rd:Selected>true</rd:Selected>
                                               <Textbox Name="Car_ID3">
                                                 <rd:DefaultName>Car_ID</rd:DefaultName>
                                                 <CanGrow>true</CanGrow>
@@ -1891,7 +1880,7 @@ OrElse (Fields!FLEET_CODE.Value="LIMEWOOD")OrElse (Fields!FLEET_CODE.Value="LIME
                                                   <Paragraph>
                                                     <TextRuns>
                                                       <TextRun>
-                                                        <Value>=Fields!Car_ID.Value</Value>
+                                                        <Value>=Fields!LOAD_STATUS.Value</Value>
                                                         <Style>
                                                           <FontFamily>Arial</FontFamily>
                                                           <FontSize>8pt</FontSize>
