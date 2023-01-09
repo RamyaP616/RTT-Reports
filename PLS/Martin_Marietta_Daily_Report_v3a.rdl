@@ -1880,7 +1880,7 @@ OrElse (Fields!FLEET_CODE.Value="LIMEWOOD")OrElse (Fields!FLEET_CODE.Value="LIME
                                                   <Paragraph>
                                                     <TextRuns>
                                                       <TextRun>
-                                                        <Value>=Fields!LOAD_STATUS.Value</Value>
+                                                        <Value>=Fields!CAR_NUMBER.Value</Value>
                                                         <Style>
                                                           <FontFamily>Arial</FontFamily>
                                                           <FontSize>8pt</FontSize>
