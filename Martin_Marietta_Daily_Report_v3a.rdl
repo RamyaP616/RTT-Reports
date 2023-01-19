@@ -617,7 +617,6 @@ OrElse (Fields!FLEET_CODE.Value="LIMEWOOD")OrElse (Fields!FLEET_CODE.Value="LIME
                                         <TablixCells>
                                           <TablixCell>
                                             <CellContents>
-                                              <rd:Selected>true</rd:Selected>
                                               <Textbox Name="Textbox3">
                                                 <rd:DefaultName>Textbox3</rd:DefaultName>
                                                 <CanGrow>true</CanGrow>
@@ -1617,7 +1616,7 @@ OrElse (Fields!FLEET_CODE.Value="LIMEWOOD")OrElse (Fields!FLEET_CODE.Value="LIME
                                                   <Paragraph>
                                                     <TextRuns>
                                                       <TextRun>
-                                                        <Value>Dwell Days</Value>
+                                                        <Value>Consignee</Value>
                                                         <Style>
                                                           <FontFamily>Arial</FontFamily>
                                                           <FontSize>8pt</FontSize>
@@ -2263,7 +2262,7 @@ OrElse (Fields!FLEET_CODE.Value="LIMEWOOD")OrElse (Fields!FLEET_CODE.Value="LIME
                                                   <Paragraph>
                                                     <TextRuns>
                                                       <TextRun>
-                                                        <Value>=Fields!Dwell_Days.Value</Value>
+                                                        <Value>=Fields!CONSIGNEE.Value</Value>
                                                         <Style>
                                                           <FontFamily>Arial</FontFamily>
                                                           <FontSize>8pt</FontSize>
