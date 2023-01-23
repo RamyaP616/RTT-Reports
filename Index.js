@@ -805,31 +805,30 @@ function two(e) {
 }
 // console.log(UserName);
 
-// function two() {
+function two() {
+  document.addEventListener("click", function (e) {
+    // UserName = document.querySelector(".UserName").innerText;
+    // console.log(UserName);
+    // e.preventDefault();
+    console.log("login");
+    currentAccount = data.find((user) => {
+      user.name == e.target.textContent;
+      console.log(e.target.textContent);
 
-//   document.addEventListener("click", function (e) {
-//     // UserName = document.querySelector(".UserName").innerText;
-//     // console.log(UserName);
-//     // e.preventDefault();
-//     console.log("login");
-//     currentAccount = data.find((user) => {
-//       user.name == e.target.textContent;
-//       console.log(e.target.textContent);
+      if (user.name == e.target.textContent) {
+        console.log(user);
+      }
+      console.log(user);
+      return user["name"] === e.target.textContent;
+    });
+    data.forEach(function (el) {
+      const html = (document.getElementById("row-data").innerHTML = el);
+    });
+    const html = document.getElementById("row-data").innerHTML;
 
-//       // if (user.name == e.target.textContent) {
-//       //   console.log(user);
-//       // }
-//       // console.log(user);
-//       // return user["name"] === e.target.textContent;
-//     });
-//     // data.forEach(function (el) {
-//     //   const html = (document.getElementById("row-data").innerHTML = el);
-//     // });
-//     // const html = document.getElementById("row-data").innerHTML;
+    console.log(data);
+  });
+}
+const movements = [100, 200, 300, -400, 500, 650, -750];
 
-//     // console.log(data);
-//   });
-// }
-// // const movements = [100, 200, 300, -400, 500, 650, -750];
-
-// // console.log(data[0].name);
+console.log(data[0].name);
