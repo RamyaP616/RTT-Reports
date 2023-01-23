@@ -1,13 +1,3 @@
-// let parsedData = JSON.parse(localStorage.getItem("expences"));
-// console.log(parsedData);
-
-// function addExpence(dataValue) {
-//   let data = [{ title: "petrol", price: 200 }];
-//   data.push(dataValue);
-//   window.location.reload();
-//   localStorage.setItem("expences", JSON.stringify(data));
-// }
-
 const data = [
   {
     index: 0,
@@ -794,7 +784,7 @@ function two(e) {
 
     currentAccount = data.find((user) => e.target.innerText === user.name);
     console.log(currentAccount);
-    
+
     FirstTable.classList.add("Hidden");
     const html = Object.entries(currentAccount).map(([key, val]) => {
       return `<div>${key} : ${val} </div>`;
